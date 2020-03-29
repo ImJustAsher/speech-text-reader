@@ -114,6 +114,7 @@ main {
 .box img {
 	width: 100%;
 	object-fit: cover;
+	height: 200px;
 }
 
 .box .info {
@@ -124,7 +125,7 @@ main {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 10px;
-	align-items: center;
+	text-align: center;
 	height: 100%;
 }
 
@@ -133,13 +134,15 @@ main {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
 @media (max-width: 760px) {
 	main {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
 @media (max-width: 500px) {
 	main {
-		grid-template-columns: repeat(1fr);
+		grid-template-columns: 1fr;
 	}
 }
